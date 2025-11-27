@@ -7,12 +7,11 @@
 
 # Theme setup
 minimal_mistakes_skin: default
+remote_theme: "mmistakes/minimal-mistakes"
 # logo: /assets/images/site-logo.png
 search: true
 locale: en-US
 permalink: /:categories/:title/
-
-theme: minimal-mistakes-jekyll
 
 markdown: kramdown
 kramdown:
