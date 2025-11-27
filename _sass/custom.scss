@@ -1,8 +1,8 @@
 :root {
   --project-card-title-size: 1.2rem;
-//   --project-card-body-size: 4rem;
+  --project-card-body-size: 0.95rem;
   --blog-card-title-size: 1.15rem;
-  --blog-card-body-size: 0.6rem;
+  --blog-card-body-size: 0.95rem;
 }
 
 .author__avatar {
@@ -13,7 +13,7 @@
 
 .author__avatar img {
   width: 100%;
-  max-width: 100%;   // override theme's 110px limit
+  max-width: 100%;
   height: auto;
   border-radius: 0;
   padding: 0;
@@ -31,7 +31,7 @@
 }
 
 body {
-  font-size: 18px;   // default is ~16px
+  font-size: 18px;
 }
 
 .projects-grid {
