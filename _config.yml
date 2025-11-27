@@ -1,0 +1,77 @@
+# title: Vancesca Dinh
+# email: dinh.vancesca@gmail.com
+# description: >-
+#   Personal portfolio powered by the Minimal Mistakes Jekyll theme.
+# url: "https://example.com"
+# baseurl: ""
+
+# Theme setup
+minimal_mistakes_skin: default
+# logo: /assets/images/site-logo.png
+search: true
+locale: en-US
+permalink: /:categories/:title/
+
+theme: minimal-mistakes-jekyll
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+paginate: 5
+paginate_path: /page:num/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+author:
+  name: Vancesca Dinh
+  avatar: /assets/images/profile.png
+  bio: >
+    Data Engineer with expertise in Python, PostgreSQL, Elasticsearch, Docker, LLM, and AI Agents combined with an analytical foundation built over 4 years as a health pricing analyst and master’s degree in statistics and data science. 
+  location: Brussels, Belgium
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:dinh.vancesca@gmail.com
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/vtdinh13
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: www.linkedin.com/in/vancesca-dinh
+
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed

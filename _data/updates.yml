@@ -1,0 +1,10 @@
+items:
+  - date: 2024-05-20
+    title: "Shipped Projects Page"
+    description: "Rolled out the responsive projects gallery with cards, images, and CTAs."
+    links:
+      - label: "View projects"
+        url: /projects/
+  - date: 2024-04-05
+    title: "Joined Acme as Senior Engineer"
+    description: "Leading the platform modernization effort and onboarding new teammates."

@@ -1,0 +1,22 @@
+# Update this list with your own projects.
+projects:
+  - name: Sample Project One
+    timeframe: 2024
+    description: >
+      Short summary of what the project does and the problem it solves.
+      Mention impact or interesting implementation details.
+    image: /assets/images/projects/project-one.jpg
+    image_alt: Dashboard preview for Project One
+    tech: ["Python", "Django", "PostgreSQL"]
+    cta_label: "View case study"
+    cta_url: "https://example.com/project-one"
+
+  - name: Sample Project Two
+    timeframe: 2023
+    description: >
+      Another project description. Keep it concise and focused on outcomes.
+    image: /assets/images/projects/project-two.jpg
+    image_alt: Screenshot of Project Two marketing site
+    tech: ["React", "TypeScript"]
+    cta_label: "Live demo"
+    cta_url: "https://example.com/project-two"

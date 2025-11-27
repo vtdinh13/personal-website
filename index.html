@@ -1,0 +1,33 @@
+---
+layout: home
+author_profile: true
+title: Welcome
+excerpt: Portfolio updates, writing, and changelog.
+---
+
+Below is a rolling list of wins, iterations, and personal updates. Populate the
+entries by editing `_data/updates.yml`.
+
+{% assign updates = site.data.updates.items | default: [] %}
+{% if updates.size > 0 %}
+<div class="updates-feed">
+  {% for update in updates %}
+    <article class="update-card">
+      <header>
+        <p class="update-card__date">{{ update.date | date: "%B %d, %Y" }}</p>
+        <h2 class="update-card__title">{{ update.title }}</h2>
+      </header>
+      <p class="update-card__body">{{ update.description }}</p>
+      {% if update.links %}
+        <ul class="update-card__links">
+          {% for link in update.links %}
+            <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+{% else %}
+<p>Add your first update by editing <code>_data/updates.yml</code>.</p>
+{% endif %}

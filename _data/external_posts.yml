@@ -1,0 +1,13 @@
+posts:
+  - title: "Scaling Notifications at Acme"
+    date: 2024-03-18
+    description: "Behind the scenes of refactoring our notification pipeline."
+    url: https://medium.com/@you/scaling-notifications-acme
+    image: /assets/images/blog/notifications.jpg
+    tags: ["Architecture", "Backend"]
+  - title: "Designing Delightful Dashboards"
+    date: 2023-11-02
+    description: "A product-focused write-up on turning analytics into stories."
+    url: https://medium.com/@you/designing-delightful-dashboards
+    image: /assets/images/blog/dashboard.jpg
+    tags: ["Product Design", "Data Viz"]
