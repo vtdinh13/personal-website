@@ -9,3 +9,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-sitemap", "~> 1.4"
 end
+
+gem "github-pages", group: :jekyll_plugins
