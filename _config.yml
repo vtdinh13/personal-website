@@ -7,7 +7,7 @@
 
 # Theme setup
 minimal_mistakes_skin: default
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minimal-mistakes-jekyll
 # logo: /assets/images/site-logo.png
 search: true
 locale: en-US

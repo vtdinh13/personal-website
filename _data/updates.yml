@@ -1,10 +1,9 @@
 items:
-  - date: 2024-05-20
-    title: "Shipped Projects Page"
-    description: "Rolled out the responsive projects gallery with cards, images, and CTAs."
+  - date: 2025-12-08
+    title: "Habit Builder AI Agent"
+    description: "An end-to-end AI agent project that transcribes audio files from the Huberman Lab podcast, embeds and searches in Qdrant, then uses a Streamlit/CLI agent powered by OpenAI GPT models and Brave search to deliver actionable health insights from both the archive and the latest research."
     links:
       - label: "View projects"
         url: /projects/
-  - date: 2024-04-05
-    title: "Joined Acme as Senior Engineer"
-    description: "Leading the platform modernization effort and onboarding new teammates."
+    image: /assets/images/habit-builder-ai-agentv2-ezgif.com-resize.gif
+    image_alt: "Animated preview of the Habit Builder AI Agent interface"

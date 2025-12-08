@@ -13,6 +13,11 @@ entries by editing `_data/updates.yml`.
 <div class="updates-feed">
   {% for update in updates %}
     <article class="update-card">
+      {% if update.image %}
+        <figure class="update-card__image">
+          <img src="{{ update.image | relative_url }}" alt="{{ update.image_alt | default: update.title }}">
+        </figure>
+      {% endif %}
       <header>
         <p class="update-card__date">{{ update.date | date: "%B %d, %Y" }}</p>
         <h2 class="update-card__title">{{ update.title }}</h2>

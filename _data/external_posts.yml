@@ -1,13 +1,49 @@
 posts:
-  - title: "Scaling Notifications at Acme"
-    date: 2024-03-18
-    description: "Behind the scenes of refactoring our notification pipeline."
-    url: https://medium.com/@you/scaling-notifications-acme
-    image: /assets/images/blog/notifications.jpg
-    tags: ["Architecture", "Backend"]
-  - title: "Designing Delightful Dashboards"
-    date: 2023-11-02
-    description: "A product-focused write-up on turning analytics into stories."
-    url: https://medium.com/@you/designing-delightful-dashboards
-    image: /assets/images/blog/dashboard.jpg
-    tags: ["Product Design", "Data Viz"]
+  - title: "How to Connect to Model Providers Using OpenRouter and SDKs"
+    date: 2025-10-20
+    description: "Practical examples and free options for top model providers including GPT, Gemini, Claude, Perplexity, Groq, Deepseek, and Mistral."
+    url: https://blog.gopenai.com/how-to-connect-to-model-providers-using-openrouter-and-sdks-c372ee710724?source=friends_link&sk=69274cc15bfde04234ab0cad2297166e
+    image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*9VQgKZRadGyQ2vaRc9yJ6g.png
+    tags: ["AI Agent", "LLM", "OpenRouter", "RAG"]
+    
+  - title: "How to scrape tables with BeautifulSoup and Selenium"
+    date: 2025-08-27
+    description: "An alternative to when pd.read_html() fails"
+    url: https://medium.com/@vancescad/how-to-scrape-tables-when-pd-read-html-fails-1ee2b36595bd?source=friends_link&sk=1f53b1ae3d05b921d7e3c910df4c3f7e
+    image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*4Ea7FQGnq7IGVt0ABQldQQ.gif
+    tags: ["Datasets", "Data Collection", "Data Science", "Data Ingestion"]
+
+  - title: "Imputation with KNN and CatBoost"
+    date: 2025-07-02
+    description: "A methodical approach to handling missing values when building a predictive model for housing listings in East Flanders"
+    url: https://medium.com/@vancescad/imputation-with-knn-and-catboost-82078f5f63b9?source=friends_link&sk=559219911d8797632419d8ab39584062
+    image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*p4w_I7f-Gg-g-iFeOxbw1A.png
+    tags: ["Data Analysis", "Data Collection", "Data Science", "Web Scraping"]
+
+  - title: "Analyzing Global Indices with YTD and CAGR"
+    date: 2025-06-10
+    description: "What financial metrics tell you about Trump’s Liberation Day"
+    url: https://medium.com/@vancescad/analyzing-global-indices-with-ytd-and-cagr-99150092815c
+    image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*f4WkyXabRwqUUWetJl1axA.png
+    tags: ["Liberation Day", "Data Visualization", "Data Analysis", "Financial Markets"]
+
+  - title: "Performance Analysis of Top Companies in S&P 500"
+    date: 2025-06-16
+    description: "YTD from January 1, 2025 to June 13, 2025"
+    url: https://medium.com/@vancescad/performance-analysis-of-top-companies-in-s-p-500-1b9e4dd49f05?source=friends_link&sk=2fba6d5f4cd9d4ff03af7e9eb6360c2c
+    image: https://miro.medium.com/v2/resize:fit:1100/format:webp/0*9JXtvk2ymT9eA4Bq
+    tags: ["Data Visualization", "Data Analysis", "Financial Markets", "SP500"]
+
+  - title: "Identifying Recessions and Investment Opportunities with Drawdown"
+    date: 2025-06-25
+    description: "By Examining: S&P 500, Coca-Cola, GE Aerospace, Blackstone, Progressive, Walt Disney, Alphabet, Palantir, Broadcom"
+    url: https://medium.com/@vancescad/identifying-recession-and-investment-opportunities-with-drawdown-5c68ebca3bbd?source=friends_link&sk=dc6cafc3de007b7662ad3366a585e417
+    image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*hYiWSinAXbvbuO7Tg4zU7w.png
+    tags: ["Data Visualization", "Data Analysis", "Financial Markets", "SP500"]
+
+
+  
+
+  
+
+

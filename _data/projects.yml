@@ -1,22 +1,20 @@
 # Update this list with your own projects.
 projects:
-  - name: Sample Project One
-    timeframe: 2024
-    description: >
-      Short summary of what the project does and the problem it solves.
-      Mention impact or interesting implementation details.
-    image: /assets/images/projects/project-one.jpg
-    image_alt: Dashboard preview for Project One
-    tech: ["Python", "Django", "PostgreSQL"]
-    cta_label: "View case study"
-    cta_url: "https://example.com/project-one"
+  - name: Habit Builder AI Agent
+    timeframe: 2025
+    description: > 
+      An end-to-end AI agent project that transcribes audio files from the Huberman Lab podcast, embeds and searches in Qdrant, then uses a Streamlit/CLI agent powered by OpenAI GPT models and Brave search to deliver actionable health insights from both the archive and the latest research.
+    image: assets/images/habit-builder-ai-agentv2-ezgif.com-resize.gif
+    image_alt: Habit Builder AI Agent Demo
+    tech: ["Python", "Docker", "PydanticAI", "PostgreSQL", "Pydantic", "Logfire", "Qdrant", "OpenAI", "pytest"]
+    cta_label: "Habit Builder AI Agent App"
+    cta_url: "https://habit-builder-ai-agent.streamlit.app/"
 
-  - name: Sample Project Two
-    timeframe: 2023
+  - name: GitHub AI Assistant
+    timeframe: 2025
     description: >
-      Another project description. Keep it concise and focused on outcomes.
-    image: /assets/images/projects/project-two.jpg
-    image_alt: Screenshot of Project Two marketing site
-    tech: ["React", "TypeScript"]
-    cta_label: "Live demo"
-    cta_url: "https://example.com/project-two"
+      Built to solve the challenge of navigating large codebases, the GitHub Assistant extracts knowledge directly from any given GitHub repo, making documentation instantly searchable and accessible. The codebase is designed to download the repo, index its Markdown content with embeddings, and use an LLM agent to answer your questions with file references.
+    image: ./assets/images/github-assistant.gif
+    tech: ["Python", "OpenAI", "PydanticAI", "minsearch"]
+    cta_label: "GitHub Assistant App"
+    cta_url: "https://gh-repo-assistant.streamlit.app/"
