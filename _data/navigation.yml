@@ -8,5 +8,5 @@ main:
     url: /projects/
   - title: "Blog"
     url: /blog/
-  - title: "Notes"
-    url: /notes/
+  # - title: "Notes"
+  #   url: /notes/

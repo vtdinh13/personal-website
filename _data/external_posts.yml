@@ -11,7 +11,7 @@ posts:
     description: "An alternative to when pd.read_html() fails"
     url: https://medium.com/@vancescad/how-to-scrape-tables-when-pd-read-html-fails-1ee2b36595bd?source=friends_link&sk=1f53b1ae3d05b921d7e3c910df4c3f7e
     image: https://miro.medium.com/v2/resize:fit:720/format:webp/1*4Ea7FQGnq7IGVt0ABQldQQ.gif
-    tags: ["Datasets", "Data Collection", "Data Science", "Data Ingestion"]
+    tags: ["Data Collection", "Data Science", "Data Ingestion", "BeautifulSoup"]
 
   - title: "Imputation with KNN and CatBoost"
     date: 2025-07-02

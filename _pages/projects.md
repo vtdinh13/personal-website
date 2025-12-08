@@ -14,7 +14,17 @@ timeframe, short description, stack tags, and a call-to-action link.
   {% assign projects = site.data.projects.projects | default: [] %}
   {% for project in projects %}
     <article class="project-card">
-      {% if project.image %}
+      {% if project.images %}
+        <div class="project-card__gallery">
+          {% for media in project.images %}
+            {% if media.src %}
+              <figure class="project-card__image">
+                <img src="{{ media.src | relative_url }}" alt="{{ media.alt | default: project.name }}">
+              </figure>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% elsif project.image %}
         <figure class="project-card__image">
           <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.name }}">
         </figure>

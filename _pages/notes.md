@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Notes
 layout: single
 permalink: /notes/
@@ -38,4 +38,4 @@ collection. Create Markdown files inside that folder with YAML front matter
       <a class="project-card__cta" href="{{ note.url | relative_url }}">Open note →</a>
     </article>
   {% endfor %}
-</div>
+</div> -->

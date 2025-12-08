@@ -39,6 +39,79 @@ body {
   font-size: 1.1rem;
 }
 
+.home-carousel {
+  margin-top: 3rem;
+}
+
+.home-carousel + .home-carousel {
+  margin-top: 2.5rem;
+}
+
+.home-carousel .project-card {
+  min-height: 520px;
+}
+
+@media (max-width: 700px) {
+  .home-carousel .project-card {
+    min-height: auto;
+  }
+}
+
+.home-carousel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-carousel__header h2 {
+  margin: 0;
+}
+
+.carousel-controls {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.carousel-button {
+  border: 1px solid var(--global-border-color, #e0e0e0);
+  background: var(--global-background-color, #fff);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-button:hover {
+  background: var(--global-muted-background, #eef2ff);
+  transform: translateY(-1px);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  align-items: stretch;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  .carousel-item {
+    flex: 0 0 48%;
+    display: flex;
+  }
+}
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -78,16 +151,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -1.5rem -1.5rem 0;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  margin: -1rem -1.5rem 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
   width: 100%;
-  padding: 1rem 1rem .2rem;
+  padding: 1rem 2.2rem 0.1rem;
 }
-
-
 
 .project-card__image img {
   display: block;
@@ -96,6 +167,12 @@ body {
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.project-card__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .project-card--blog .project-card__image {
@@ -163,6 +240,10 @@ body {
   gap: 0.75rem;
 }
 
+.carousel-item .project-card {
+  height: 100%;
+}
+
 .project-card--blog .project-card__title a {
   text-decoration: none;
   color: inherit;
@@ -173,6 +254,16 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  height: 4.8rem;
+}
+
+.project-card--blog .project-card__tags {
+  min-height: 2.2rem;
+  align-content: flex-start;
+}
+
+.project-card--blog .project-card__cta {
+  margin-top: auto;
 }
 
 .blog-grid {
@@ -282,6 +373,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
 
 .update-card__date {
   margin: 0;
