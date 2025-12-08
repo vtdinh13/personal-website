@@ -19,3 +19,6 @@ _site/
 .jekyll-metadata
 vendor/
 vendor/bundle
+
+# Local-only config files
+_config_local.yml

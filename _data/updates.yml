@@ -5,5 +5,5 @@ items:
     links:
       - label: "View projects"
         url: /projects/
-    image: /assets/images/habit-builder-ai-agentv2-ezgif.com-resize.gif
+    image: assets/images/projects/habit-builder/habit-builder-ai-agentv2-ezgif.com-resize.gif
     image_alt: "Animated preview of the Habit Builder AI Agent interface"

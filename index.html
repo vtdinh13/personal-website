@@ -1,38 +1,57 @@
 ---
 layout: home
 author_profile: true
-title: Welcome
-excerpt: Portfolio updates, writing, and changelog.
+title: Featured Projects
+excerpt: Selected work spanning AI agents, data platforms, and tooling.
 ---
 
-Below is a rolling list of wins, iterations, and personal updates. Populate the
-entries by editing `_data/updates.yml`.
+<section class="home-intro">
+  <p>
+    Curated highlights from recent work across AI assistants, data platforms, and product tooling.
+    Explore the full archive on the <a href="{{ "/projects/" | relative_url }}">Projects</a> page.
+  </p>
+</section>
 
-{% assign updates = site.data.updates.items | default: [] %}
-{% if updates.size > 0 %}
-<div class="updates-feed">
-  {% for update in updates %}
-    <article class="update-card">
-      {% if update.image %}
-        <figure class="update-card__image">
-          <img src="{{ update.image | relative_url }}" alt="{{ update.image_alt | default: update.title }}">
-        </figure>
-      {% endif %}
-      <header>
-        <p class="update-card__date">{{ update.date | date: "%B %d, %Y" }}</p>
-        <h2 class="update-card__title">{{ update.title }}</h2>
-      </header>
-      <p class="update-card__body">{{ update.description }}</p>
-      {% if update.links %}
-        <ul class="update-card__links">
-          {% for link in update.links %}
-            <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </article>
-  {% endfor %}
-</div>
+{% assign featured_projects = site.data.projects.projects | where: "featured", true | default: [] %}
+{% if featured_projects.size == 0 %}
+  <p>No featured projects yet. Add <code>featured: true</code> to entries in <code>_data/projects.yml</code>.</p>
 {% else %}
-<p>Add your first update by editing <code>_data/updates.yml</code>.</p>
+  <div class="projects-grid">
+    {% for project in featured_projects %}
+      <article class="project-card">
+        {% if project.image %}
+          <figure class="project-card__image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.name }}">
+          </figure>
+        {% endif %}
+        <header class="project-card__header">
+          <p class="project-card__timeframe">{{ project.timeframe }}</p>
+          <h2 class="project-card__title">{{ project.name }}</h2>
+        </header>
+        <p class="project-card__description">{{ project.description }}</p>
+        {% if project.tech %}
+          <ul class="project-card__tags">
+            {% for tag in project.tech %}
+              <li>{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if project.ctas %}
+          <div class="project-card__cta-group">
+            {% for cta in project.ctas %}
+              {% if cta.url %}
+                <a href="{{ cta.url }}" class="project-card__cta" target="_blank" rel="noopener">
+                  {{ cta.label | default: "Learn more" }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% elsif project.cta_url %}
+          <a href="{{ project.cta_url }}" class="project-card__cta" target="_blank" rel="noopener">
+            {{ project.cta_label | default: "Learn more" }}
+          </a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
 {% endif %}

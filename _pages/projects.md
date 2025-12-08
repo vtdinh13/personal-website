@@ -10,7 +10,7 @@ Below is a starter grid you can duplicate for each project. Update the entries
 in `_data/projects.yml` to control the cards. Each project includes a name,
 timeframe, short description, stack tags, and a call-to-action link.
 
-<div class="projects-grid">
+<div class="projects-grid projects-grid--two">
   {% assign projects = site.data.projects.projects | default: [] %}
   {% for project in projects %}
     <article class="project-card">
@@ -31,7 +31,17 @@ timeframe, short description, stack tags, and a call-to-action link.
           {% endfor %}
         </ul>
       {% endif %}
-      {% if project.cta_url %}
+      {% if project.ctas %}
+        <div class="project-card__cta-group">
+          {% for cta in project.ctas %}
+            {% if cta.url %}
+              <a href="{{ cta.url }}" class="project-card__cta" target="_blank" rel="noopener">
+                {{ cta.label | default: "Learn more" }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% elsif project.cta_url %}
         <a href="{{ project.cta_url }}" class="project-card__cta" target="_blank" rel="noopener">
           {{ project.cta_label | default: "Learn more" }}
         </a>

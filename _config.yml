@@ -1,4 +1,4 @@
-# title: Vancesca Dinh
+title: Vancesca Dinh
 # email: dinh.vancesca@gmail.com
 # description: >-
 #   Personal portfolio powered by the Minimal Mistakes Jekyll theme.
@@ -67,6 +67,9 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
+  notes:
+    output: true
+    permalink: /notes/:title/
 
 include:
   - _pages
