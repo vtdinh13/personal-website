@@ -31,7 +31,7 @@ author:
   name: Vancesca Dinh
   avatar: /assets/images/profile.png
   bio: >
-    Data Engineer with expertise in Python, PostgreSQL, Elasticsearch, Docker, LLM, and AI Agents combined with an analytical foundation built over 4 years as a health pricing analyst and master’s degree in statistics and data science. 
+    AI Engineer with a Master’s in Data Science, building end-to-end AI systems from ingestion to deployment.
   location: Brussels, Belgium
   links:
     - label: Email
@@ -77,3 +77,6 @@ include:
 sass:
   sass_dir: _sass
   style: compressed
+
+atom_feed:
+  hide: true
