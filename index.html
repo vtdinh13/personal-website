@@ -69,7 +69,7 @@ excerpt: Selected work spanning AI agents, data platforms, and tooling.
 {% endif %}
 
 {% assign writing_posts = site.posts | default: [] | slice: 0, 6 %}
-{% assign writing_external = site.data.external_posts.posts | default: [] | slice: 0, 6 %}
+{% assign writing_external = site.data.external_posts.posts | default: [] | sort: "date" | reverse | slice: 0, 6 %}
 {% assign writing_total = writing_posts | size %}
 {% assign writing_external_count = writing_external | size %}
 {% assign writing_total = writing_total | plus: writing_external_count %}
