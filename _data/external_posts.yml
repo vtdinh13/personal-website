@@ -1,4 +1,11 @@
 posts:
+  - title: "How To Select the Optimal Chunk Size for RAG Applications with LLM Judge and PydanticAI"
+    date: 2025-12-20
+    description: "Includes cost analysis and uses Chapter 4 of Chip Huyen’s AI Engineering book on “Evaluating AI Systems” as the knowledge base"
+    url: https://medium.com/gopenai/how-to-select-the-optimal-chunk-size-for-rag-applications-with-llm-judge-and-pydanticai-fcac8e92e50b?sk=f510afe221b9191fd9d52cbc93260503
+    image: https://miro.medium.com/v2/resize:fit:720/format:webp/0*pCf69x3eINLW1mFz
+    tags: ["AI Agent", "LLM", "LLM Evaluation", "RAG", "AI Engineer", "LLM Judge"]
+  
   - title: "How to Connect to Model Providers Using OpenRouter and SDKs"
     date: 2025-10-20
     description: "Practical examples and free options for top model providers including GPT, Gemini, Claude, Perplexity, Groq, Deepseek, and Mistral."

@@ -29,3 +29,17 @@ projects:
         url: "https://gh-repo-assistant.streamlit.app/"
       - label: "View on GitHub"
         url: "https://github.com/vtdinh13/github-assistant"
+
+  - name: Simplifying your Data Job Search in Belgium
+    timeframe: 2025
+    featured: false
+    description: >
+      Dashboard to help job seekers gain insights into job opportunities and the in-demand skills needed to land a data role in Belgium today.
+    images:
+      - src: /assets/images/projects/github-assistant/github-assistant.gif
+    tech: ["pandas", "Python", "PydanticAI", "BeautifulSoup"]
+    ctas:
+      - label: "Try the Dashboard"
+        url: "https://data-jobs-belgium.streamlit.app/"
+      - label: "View on GitHub"
+        url: "https://github.com/vtdinh13/data-jobs-belgium/tree/main/project"
